@@ -1,0 +1,21 @@
+.tabbar {
+  height: 1.08rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+}
+
+.tabbar li a {
+  display: flex;
+  flex-direction: column;
+  color: #9a9a9a;
+}
+
+.tabbar li .active {
+  color: #666;
+}
+
+.tabbar li a span {
+  margin-top: 4px;
+}
