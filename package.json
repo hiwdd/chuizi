@@ -36,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:sz-1904/chuizi.git",
+  "author": "xa0001 <982039670@qq.com>",
+  "license": "MIT"
 }
