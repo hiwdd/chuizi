@@ -5,6 +5,7 @@ import Home from '../views/Home/index';
 import Classify from '../views/Classify/index';
 import Mine from '../views/Mine/index';
 import Shopcar from '../views/Shopcar/index';
+import Detail from '../views/Detail/index';
 import NotFound from '../views/NotFound/index';
 
 class SubRouter extends React.Component {
@@ -15,6 +16,7 @@ class SubRouter extends React.Component {
         <Route path="/classify" component={Classify} />
         <Route path="/shopcar" component={Shopcar} />
         <Route path="/mine" component={Mine} />
+        <Route path="/detail" component={Detail} />
         <Route path="*" component={NotFound} />
       </Switch>
     );

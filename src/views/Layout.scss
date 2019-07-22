@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: #ececec;
+  background: #ededed;
 }
 .layout .lay-child {
   flex: 1;
+  overflow: hidden;
 }
