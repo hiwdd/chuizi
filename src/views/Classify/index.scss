@@ -1,0 +1,91 @@
+@import '../../static/css/px2rem.scss';
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 2.14rem;
+  background: #1d1d1d;
+  color:#fff;
+  .nav-menu{
+    font-size: .85rem;
+    margin-left:0.625rem;
+    color: #fff;
+    margin-top:0.625rem;
+  }
+  .nav-search{
+    font-size: .85rem;
+    margin-right:0.625rem;
+    color: #fff;
+    margin-top:0.625rem;
+  }
+  span{
+    line-height: 2.14rem;
+    font-size:0.84rem;
+    font-weight: bold;
+  }
+}
+// 手机div
+.phone{
+  height:12.64rem;
+  border-bottom: .4rem solid  #d3d3ff;
+}
+.phone p{
+  height: 1.8rem;
+  line-height: 1.8rem;
+  border-bottom: .05rem solid #d3d3ff;
+  color:#666;
+  font-size:.7rem; 
+  padding-left:.73rem;
+  font-weight: bold;
+}
+.phone .phone-log{
+  display: flex;
+  align-items: center;
+  border-radius: .25rem;
+  margin:0.62rem;
+  box-sizing: border-box;
+  img{
+    width: 100%;
+  }
+}
+.phone a{
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  border-top:.05rem solid #d3d3ff;
+  img{
+    display: block;
+    width: 1.68rem;
+    height: 1.68rem;
+    margin-left:.42rem;
+  }
+  span{
+    color:#1d1d1dab;
+    display: block;
+    margin-left:.425rem;
+    font-size: .632rem;
+  }
+}
+// 手机配件
+.mobilephone p{
+  height: 1.8rem;
+  line-height: 1.8rem;
+  border-bottom: .05rem solid #d3d3ff;
+  color:#666;
+  font-size:.7rem; 
+  padding-left:.73rem;
+  font-weight: bold;
+}
+.mobilephone .log-mobile{
+  display: flex;
+  align-items: center;
+  border-radius: .25rem;
+  margin:0.62rem;
+  box-sizing: border-box;
+ 
+  img{
+    width: 100%;
+  }
+}
