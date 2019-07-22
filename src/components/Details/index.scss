@@ -1,0 +1,17 @@
+@import '../../static/css/px2rem.scss';
+
+.det-xq {
+  background: #fff;
+  h2 {
+    height: px2rem(40);
+    line-height: px2rem(40);
+    font-size: 16px;
+    padding: 0 6px;
+    font-weight: 700;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+  }
+  img {
+    width: 100%;
+  }
+}
