@@ -1,6 +1,6 @@
 import React from 'react';
 import Tabbar from '../components/Tabbar/index';
-import './Layout.css';
+import './Layout.scss';
 
 class Layout extends React.Component {
   render() {

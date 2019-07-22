@@ -1,5 +1,7 @@
+@import '../../static/css/px2rem.scss';
+
 .tabbar {
-  height: 1.08rem;
+  height: px2rem(54);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,6 +12,8 @@
   display: flex;
   flex-direction: column;
   color: #9a9a9a;
+  font-size: 12px;
+  text-align: center;
 }
 
 .tabbar li .active {

@@ -5,15 +5,15 @@
 
 ## 项目安装依赖
 
-- less less-loader ❌
+- sass-loader node-sass ✔
 - react-router react-router-dom ✔
 - redux react-redux ✔
-- antd ✔
+- antd antd-mobile ✔
 
 ## 项目布局
 
-- flexble.js ✔
-- 统一用 css 写样式，写在当前文件夹下
+- hotcss.js ✔ 不懂参考https://www.npmjs.com/package/hotcss
+- 统一用 scss 写样式，写在当前文件夹下
 
 ## 路由配置
 
@@ -33,3 +33,6 @@
 - 最外层采用当前文件名（组件名），命名时不分大小写，里层采用最外层的名字加-XXX 的形式，如果最外层名字太长就写前三个字母，在里层就又加个-，比如 home 组件外层我就叫 home，里面的我就叫 home-xxx
 
 ## 任务分配
+
+账号：15999745074
+密码：lmt15999745074
