@@ -27,7 +27,7 @@ class User extends React.Component {
             </div>
           </NavLink>
           <ul className="ul_list">
-            <li>
+            <li className='li'>
               <NavLink to= '/'>
                 <i>
                   <Icon type="loading" />
@@ -35,7 +35,7 @@ class User extends React.Component {
                 <p>全部订单</p>
               </NavLink>
             </li>
-            <li>
+            <li className='li'>
               <NavLink to= '/'>
                 <i>
                   <Icon type="loading" />
@@ -43,7 +43,7 @@ class User extends React.Component {
                 <p>待付款</p>
               </NavLink>
             </li>
-            <li>
+            <li className='li'>
               <NavLink to= '/'>
                 <i>
                   <Icon type="loading" />
@@ -61,7 +61,7 @@ class User extends React.Component {
             </li>
           </ul>
           <ol>
-            <li>
+            <li className='bottom'>
               <NavLink to= '/'>
                 地址管理 <Icon type="right" />
               </NavLink>
@@ -71,19 +71,19 @@ class User extends React.Component {
                 我的优惠券 <Icon type="right" />
               </NavLink>
             </li>
-            <li>
+            <li className='bottom'>
               <NavLink to= '/'>
                 优先购买卡 <Icon type="right" />
               </NavLink>
             </li>
-            <li>
+            <li className='bottom'>
               <NavLink to= '/'>
                 提货兑换卡 <Icon type="right" />
               </NavLink>
             </li>
           </ol>
           <ol>
-            <li>
+            <li className='bottom'>
               <NavLink to= '/'>
                 常见问题 <Icon type="right" />
               </NavLink>
