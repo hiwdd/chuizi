@@ -1,11 +1,11 @@
 import React from 'react';
-import User from './mine-user'
+import Coupon from './Coupon'
 
 class Mine extends React.Component {
   render() {
     return (
       <div>
-        <User />
+        <Coupon />
       </div>
     );
   }

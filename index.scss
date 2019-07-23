@@ -1,0 +1,218 @@
+.login{
+  display: flex;
+  flex-flow: column;
+
+  // 头部
+  .login_header{
+    width: 100%;
+    background: #1d1d1d;
+
+    p{
+      color: #fff;
+      font-size: 20px;
+      line-height: 2.8em;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+
+    // 资料填选区
+  .login_body{
+    margin: 14px 12px 0;
+    flex:1;
+    background: url(https://static.smartisanos.cn/account.common/img/v2/m/bg_66b2175241.jpg);
+
+    div{
+      margin: 0;
+      padding: 0;
+      outline:0;
+      border-radius: 4px;
+      
+    }
+    input{
+      height: 44px;
+      margin-bottom: 14px;
+      outline:0;
+      border-radius: 4px;
+    }
+
+
+    
+  
+    // 选择国家和地区
+    .position{
+      
+      .pos{
+        pointer-events:none;
+      }
+
+      span{
+        display: flex;
+        
+        input{
+          flex: 2;
+          font-size: 16px;
+          border-right: none;
+          border-radius: 4px 0 0 4px; 
+        }
+
+        div{
+          flex: 1;
+          height: 44px;
+          border-left: none;
+          border-radius: 0 4px 4px 0; 
+          margin-left: -1px;
+        }
+
+
+        .ant-select-selection-selected-value{
+          line-height: 42px;
+          margin-left: 28px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    // 手机号
+    .phon{
+
+      span{
+        display: flex;
+
+        div{
+          background: #fff;
+          height: 44px;
+          text-align: center;
+          border: 1px solid #d9d9d9;
+          border-right: none;
+          flex: 1;
+          border-radius:  4px 0 0 4px;
+          font-size: 15px;
+
+        }
+
+        input{
+          flex:5;
+          border-left: none;
+          margin-left: -1px;
+          border-radius: 0 4px 4px 0;
+
+        }
+      }
+    }
+
+    // 验证码
+    .regter_reg{
+
+      span{
+        display: flex;
+        
+        input{
+          flex: 2;
+        }
+        .ant-input:focus{
+         border-left: 1px solid #d9d9d9;
+
+        }
+  
+        button{
+          flex: 1;
+          height: 44px;
+          margin-left: 10px;
+          border: none;
+          background: #f7f7f7;
+          border-radius: 4px;
+          outline:0;
+        }
+      }
+    }
+    // 勾选协议
+    .remember{
+      margin-top: -14px;
+
+      .ant-form-item-children{
+        display: flex;
+
+        .che{
+          flex: 1;
+          display: flex;
+
+          .ches{
+            float: none;
+            display: block;
+            width: 20px;
+            height: 20px;
+            line-height: 18px;
+            background: #ececec;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            margin: 0;
+            box-shadow: #7f7f7f 0 2px 3px 0 inset;
+            margin-top: 10px;
+            margin-left: 16px;
+          }
+
+          span{
+            margin-left: .2rem;
+            color: #7f7f7f;
+            font-size: 14px;
+          }
+
+          a{
+            color: #5178df;
+            margin: 0 2px;
+          }
+        }
+      }
+      
+    }
+
+    // 注册框
+    .register{
+      background-color: #81A8E4 ;
+      border-color: #81A8E4 ;
+      border: none;
+      border-radius: .3rem;
+      color: #fff;
+      width: 100%;
+      height: 51px;
+      font-size: 18px;
+      outline:0;
+      margin-top: 8px;
+
+    }
+    .register:active {
+      border-color: #5178df ;
+      background-color: #5178df ;
+
+    }
+
+    .login{
+      margin: 35px 0 0;
+      font-size: 14px;
+      color: #7f7f7f;
+      text-align: center;
+      display: block;
+
+      span{
+        color: #5178df;
+        margin-left: 6px;
+      }
+    }
+
+    //清除默认样式
+    .ant-select-selection:focus, .ant-select-selection:active ,.ant-input:hover{
+      border: 1px solid #d9d9d9;
+      border-left: none;
+      box-shadow:none;
+    }
+    .ant-select-selection:hover ,.ant-input:focus {
+      border-top: 1px solid #d9d9d9;
+      border-right: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+      box-shadow:none;
+    }
+  }
+}
