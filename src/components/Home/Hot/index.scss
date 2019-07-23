@@ -1,0 +1,75 @@
+@import '../../../static/css/px2rem.scss';
+
+.hot-goods {
+  width: 100%;
+  background: #fff;
+  border-bottom: 6px solid rgb(201, 197, 197);
+}
+
+.hot-goods-more {
+  width: 100%;
+  height:px2rem(40);
+  line-height: px2rem(40);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.hot-goods-more p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+
+.hot-goods-ul {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  overflow-y:hidden;
+}
+
+.hot-goods-li {
+  margin-top: 18px;
+  width: px2rem(126);
+  height: 100%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+
+.hot-goods-li img {
+  height: px2rem(124);
+  width:px2rem(124);
+  border: #666 1px solid;
+}
+
+.introduce {
+  width: 100%;
+  padding: px2rem(6) px2rem(9);
+}
+
+.introduce h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  display: block;
+  font-size: 14px;
+}
+
+.introduce p {
+  margin-top: .3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.price {
+  display: flex;
+  white-space: nowrap;
+  color:#d44d44;
+}

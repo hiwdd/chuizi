@@ -1,0 +1,74 @@
+@import '../../../static/css/px2rem.scss';
+
+.breath {
+  width: 100%;
+  background: #fff;
+  border-bottom: 6px solid rgb(201, 197, 197);
+}
+
+.breath-more {
+  width: 100%;
+  height:px2rem(40);
+  line-height: px2rem(40);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.breath-more p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+
+.breath-ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px px2rem(11) 10px px2rem(11);
+}
+
+.breath-li {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.breath-li img {
+  width: px2rem(170);
+  height: px2rem(170);
+  border: 1px solid #666;
+}
+
+.breath-introduce {
+  width: 100%;
+  padding: px2rem(6) px2rem(9);
+}
+
+.breath-introduce h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  display: block;
+  font-size: 14px;
+}
+
+.breath-introduce p {
+  margin-top: .3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.breath-price {
+  display: flex;
+  white-space: nowrap;
+  color:#d44d44;
+}
+
+
