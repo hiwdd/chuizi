@@ -1,0 +1,25 @@
+@import '../../static/css/px2rem.scss';
+
+.tabbar {
+  height: px2rem(54);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+}
+
+.tabbar li a {
+  display: flex;
+  flex-direction: column;
+  color: #9a9a9a;
+  font-size: 12px;
+  text-align: center;
+}
+
+.tabbar li .active {
+  color: #666;
+}
+
+.tabbar li a span {
+  margin-top: 4px;
+}
