@@ -12,8 +12,8 @@ class User extends React.Component {
           <p>个人中心</p>
         </div>
         <div className="user_body">
-          <NavLink to= '/'>
-            <div className="user_body_my">
+          <NavLink to= '/login'>
+            <div className="user_body_my bottom">
               <div className="user_image">
                 <img
                   src="//static.smartisanos.cn/account/asset/img/default-user-avatar.png"
@@ -26,9 +26,9 @@ class User extends React.Component {
               </p>
             </div>
           </NavLink>
-          <ul className="ul_list">
+          <ul className="ul_list top">
             <li className='li'>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 <i>
                   <Icon type="loading" />
                 </i>
@@ -36,7 +36,7 @@ class User extends React.Component {
               </NavLink>
             </li>
             <li className='li'>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 <i>
                   <Icon type="loading" />
                 </i>
@@ -44,7 +44,7 @@ class User extends React.Component {
               </NavLink>
             </li>
             <li className='li'>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 <i>
                   <Icon type="loading" />
                 </i>
@@ -52,7 +52,7 @@ class User extends React.Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 <i>
                   <Icon type="loading" />
                 </i>
@@ -62,46 +62,46 @@ class User extends React.Component {
           </ul>
           <ol>
             <li className='bottom'>
-              <NavLink to= '/'>
+              <NavLink to= '/address'>
                 地址管理 <Icon type="right" />
               </NavLink>
             </li>
-            <li>
-              <NavLink to= '/'>
+            <li className='bottom'>
+              <NavLink to= '/coupon'>
                 我的优惠券 <Icon type="right" />
               </NavLink>
             </li>
             <li className='bottom'>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 优先购买卡 <Icon type="right" />
               </NavLink>
             </li>
             <li className='bottom'>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 提货兑换卡 <Icon type="right" />
               </NavLink>
             </li>
           </ol>
           <ol>
             <li className='bottom'>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 常见问题 <Icon type="right" />
               </NavLink>
             </li>
             <li>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 服务支持 <Icon type="right" />
               </NavLink>
             </li>
           </ol>
           <ol>
-            <li>
-              <NavLink to= '/'>
+            <li className='bottom'>
+              <NavLink to= '/other'>
                 意外碎屏保修服务 <Icon type="right" />
               </NavLink>
             </li>
             <li>
-              <NavLink to= '/'>
+              <NavLink to= '/other'>
                 延长保修服务 <Icon type="right" />
               </NavLink>
             </li>

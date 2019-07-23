@@ -40,16 +40,16 @@ class Register extends React.Component {
               <div className="che">
                 <b className='ches' to="">√</b>
                 <span>我已阅读并同意遵守</span>
-                 <NavLink to="/">法律声明</NavLink>
+                 <NavLink to="/other">法律声明</NavLink>
                  和
-                 <NavLink to="/">隐私条款</NavLink>
+                 <NavLink to="/other">隐私条款</NavLink>
               </div>
             </Form.Item>
             <Form.Item>
               <button className='register'>注册</button>
             </Form.Item>
           </Form>
-          <NavLink className='login' to="/">如果您已拥有 Smartisan ID，则可在此<span>登录</span></NavLink>
+          <NavLink className='login' to="/login">如果您已拥有 Smartisan ID，则可在此<span>登录</span></NavLink>
         </div>
       </div>
     );
