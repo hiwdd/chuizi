@@ -1,0 +1,16 @@
+@import '../../../static/css/px2rem.scss';
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: px2rem(50);
+  line-height: px2rem(50);
+  font-size: 24px;
+  background: #1d1d1d;
+  color:#fff;
+  padding: 0 px2rem(20);
+}
+
+
+
