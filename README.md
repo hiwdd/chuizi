@@ -10,6 +10,7 @@
 - redux react-redux ✔
 - antd antd-mobile ✔
 - swiper ✔
+- http-proxy-middleware ✔
 
 ## 项目布局
 
