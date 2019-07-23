@@ -1,13 +1,24 @@
+//详情页里的商品页
+
 import React, { Component } from 'react';
+import Swiper from '../Swiper/index';
 import './index.scss';
 
 class Product extends Component {
+  state = {
+    bannerList: [
+      'https://resource.smartisan.com/resource/578116bddf1d170c89e9af7ba5073fb6.jpg?x-oss-process=image/format,webp',
+      'https://resource.smartisan.com/resource/ebb01298315bf2ebdb6b21ee2c8e4237.jpg?x-oss-process=image/format,webp',
+      'https://resource.smartisan.com/resource/ebb01298315bf2ebdb6b21ee2c8e4237.jpg?x-oss-process=image/format,webp'
+    ]
+  };
   render() {
     return (
       <div className="det-sp">
-        <img
-          src="https://resource.smartisan.com/resource/578116bddf1d170c89e9af7ba5073fb6.jpg?x-oss-process=image/format,webp"
-          alt=""
+        <Swiper
+          className="box"
+          autoplay={{ delay: 10000 }}
+          slide={this.state.bannerList}
         />
         <div className="det-sp-cont">
           <div className="cont-top">

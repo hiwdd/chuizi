@@ -1,3 +1,5 @@
+//一级路由组件
+
 import React from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 import Layout from '../views/Layout.jsx';

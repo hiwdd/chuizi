@@ -1,7 +1,8 @@
 @import '../../static/css/px2rem.scss';
+@import '../../static/css/mixins.scss';
 
 .det-sp {
-  img {
+  .box {
     height: px2rem(300);
     margin: auto;
   }
@@ -29,8 +30,8 @@
         font-weight: 700;
         display: flex;
         white-space: nowrap;
-        border-bottom: 1px solid #ccc;
         padding-bottom: 10px;
+        @include border-bottom;
 
         i {
           font-style: normal;

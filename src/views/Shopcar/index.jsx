@@ -14,7 +14,7 @@ class Notshop extends Component {
           <div className="not-cen">
             <h3>购物车暂无商品</h3>
             <p>添加到购物车的商品将会显示在这里</p>
-            <Link to="/detail">现在选购</Link>
+            <Link to="/detail/11">现在选购</Link>
           </div>
         </div>
       </div>

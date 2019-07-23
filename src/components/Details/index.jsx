@@ -1,3 +1,5 @@
+//详情页里的商品详情
+
 import React, { Component } from 'react';
 import './index.scss';
 

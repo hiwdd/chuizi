@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavBar, Icon, Tabs } from 'antd-mobile';
 import Product from '../../components/Product/index';
 import Details from '../../components/Details/index';
+import Params from '../../components/Params/index';
 import './index.scss';
 
 const tabs = [
@@ -17,7 +18,14 @@ class Detail extends Component {
       <div className="detail">
         <NavBar
           className="det-top"
-          icon={<Icon type="left" />}
+          icon={
+            <Icon
+              type="left"
+              onClick={() => {
+                this.props.history.goBack();
+              }}
+            />
+          }
           style={{ fontSize: '18px', color: '#fff', background: 'black' }}
         >
           Smartisan 帆布鞋
@@ -26,7 +34,7 @@ class Detail extends Component {
           <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
             <Product />
             <Details />
-            <div>Content of third tab</div>
+            <Params />
             <div>Content of four tab</div>
           </Tabs>
         </div>

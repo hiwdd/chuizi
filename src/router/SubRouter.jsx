@@ -1,3 +1,5 @@
+//二级路由组件
+
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
@@ -16,7 +18,7 @@ class SubRouter extends React.Component {
         <Route path="/classify" component={Classify} />
         <Route path="/shopcar" component={Shopcar} />
         <Route path="/mine" component={Mine} />
-        <Route path="/detail" component={Detail} />
+        <Route path="/detail/:id" component={Detail} />
         <Route path="*" component={NotFound} />
       </Switch>
     );

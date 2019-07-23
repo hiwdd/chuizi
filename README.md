@@ -9,6 +9,7 @@
 - react-router react-router-dom ✔
 - redux react-redux ✔
 - antd antd-mobile ✔
+- swiper ✔
 
 ## 项目布局
 
