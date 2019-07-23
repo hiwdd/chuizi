@@ -1,0 +1,26 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  background: #1d1d1d;
+  color:#fff;
+  .navMenu{
+    display: block;
+    font-size: .95rem;
+    margin-left:0.625rem;
+    color: #fff;
+    margin-top:.542rem;
+  }
+  .navSreach{
+    display: block;
+    font-size: .95rem;
+    margin-right:0.625rem;
+    color: #fff;
+    margin-top:.542rem;
+  }
+  span{
+    line-height: 2.14rem;
+    font-size:0.84rem;
+    font-weight: bold;
+  }
+}
