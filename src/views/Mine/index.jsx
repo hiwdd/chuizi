@@ -8,6 +8,9 @@ class Mine extends React.Component {
       </div>
     );
   }
+  componentDidMount() {
+    document.title = '个人中心';
+  }
 }
 
 export default Mine;

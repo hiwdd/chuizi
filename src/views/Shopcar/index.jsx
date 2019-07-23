@@ -30,6 +30,9 @@ class Shopcar extends Component {
       </div>
     );
   }
+  componentDidMount() {
+    document.title = '我的购物车';
+  }
 }
 
 export default Shopcar;

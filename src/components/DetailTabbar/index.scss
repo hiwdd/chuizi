@@ -1,0 +1,18 @@
+@import '../../static/css/px2rem.scss';
+
+.dt {
+  display: flex;
+  background: #fff;
+  padding: 4px 0;
+  .btn {
+    display: block;
+    height: px2rem(48);
+    line-height: px2rem(48);
+  }
+  .btn2 {
+    margin: 0 px2rem(20);
+  }
+  .btn1 {
+    flex: 1;
+  }
+}

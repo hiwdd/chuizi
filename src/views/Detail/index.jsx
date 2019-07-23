@@ -3,6 +3,8 @@ import { NavBar, Icon, Tabs } from 'antd-mobile';
 import Product from '../../components/Product/index';
 import Details from '../../components/Details/index';
 import Params from '../../components/Params/index';
+import Recommend from '../../components/Recommend/index';
+import DetailTabbar from '../../components/DetailTabbar/index';
 import './index.scss';
 
 const tabs = [
@@ -35,11 +37,15 @@ class Detail extends Component {
             <Product />
             <Details />
             <Params />
-            <div>Content of four tab</div>
+            <Recommend />
           </Tabs>
         </div>
+        <DetailTabbar />
       </div>
     );
+  }
+  componentDidMount() {
+    document.title = '商品详情';
   }
 }
 

@@ -15,6 +15,7 @@ class SubRouter extends React.Component {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/home" component={Home} />
         <Route path="/classify" component={Classify} />
         <Route path="/shopcar" component={Shopcar} />
         <Route path="/mine" component={Mine} />

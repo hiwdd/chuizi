@@ -8,6 +8,9 @@ class Classify extends React.Component {
       </div>
     );
   }
+  componentDidMount() {
+    document.title = '分类';
+  }
 }
 
 export default Classify;
