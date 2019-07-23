@@ -1708,7 +1708,7 @@ antd-mobile@^2.2.14:
 
 antd@^3.20.5:
   version "3.20.5"
-  resolved "https://registry.npm.taobao.org/antd/download/antd-3.20.5.tgz#4456a5cc216d52e7d831e2a91cc37c18b18ee242"
+  resolved "https://registry.npm.taobao.org/antd/download/antd-3.20.5.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fantd%2Fdownload%2Fantd-3.20.5.tgz#4456a5cc216d52e7d831e2a91cc37c18b18ee242"
   integrity sha1-RFalzCFtUufYMeKpHMN8GLGO4kI=
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"

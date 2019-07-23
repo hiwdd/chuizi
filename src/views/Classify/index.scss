@@ -1,91 +1,160 @@
 @import '../../static/css/px2rem.scss';
 
-.header{
+.classify{
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  height: 2.14rem;
-  background: #1d1d1d;
-  color:#fff;
-  .nav-menu{
-    font-size: .85rem;
-    margin-left:0.625rem;
-    color: #fff;
-    margin-top:0.625rem;
+  flex-direction: column;
+  .wrap-pho{
+    flex:1;
+    overflow: auto;
   }
-  .nav-search{
-    font-size: .85rem;
-    margin-right:0.625rem;
-    color: #fff;
-    margin-top:0.625rem;
+  
+  // 手机div
+  .phone{
+    height:12.44rem;
+    border-bottom: .4rem solid  #d3d3ff;
   }
-  span{
-    line-height: 2.14rem;
-    font-size:0.84rem;
+  .phone p{
+    height: 1.6rem;
+    line-height: 1.6rem;
+    border-bottom: .05rem solid #d3d3ff;
+    color:#666;
+    font-size:.7rem; 
+    padding-left:.73rem;
     font-weight: bold;
   }
-}
-// 手机div
-.phone{
-  height:12.64rem;
-  border-bottom: .4rem solid  #d3d3ff;
-}
-.phone p{
-  height: 1.8rem;
-  line-height: 1.8rem;
-  border-bottom: .05rem solid #d3d3ff;
-  color:#666;
-  font-size:.7rem; 
-  padding-left:.73rem;
-  font-weight: bold;
-}
-.phone .phone-log{
-  display: flex;
-  align-items: center;
-  border-radius: .25rem;
-  margin:0.62rem;
-  box-sizing: border-box;
-  img{
-    width: 100%;
+  .phone .phone-log{
+    display: flex;
+    align-items: center;
+    border-radius: .25rem;
+    margin:0.62rem;
+    box-sizing: border-box;
+    img{
+      width: 100%;
+    }
   }
-}
-.phone a{
-  height: 2.8rem;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  position: relative;
-  border-top:.05rem solid #d3d3ff;
-  img{
-    display: block;
-    width: 1.68rem;
-    height: 1.68rem;
-    margin-left:.42rem;
+  .phone a{
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    border-top:.05rem solid #d3d3ff;
+    img{
+      display: block;
+      width: 1.68rem;
+      height: 1.68rem;
+      margin-left:.42rem;
+    }
+    span{
+      color:#1d1d1dab;
+      display: block;
+      margin-left:.425rem;
+      font-size: .632rem;
+    }
   }
-  span{
-    color:#1d1d1dab;
-    display: block;
-    margin-left:.425rem;
-    font-size: .632rem;
+  // 手机配件
+  .mobilephone{
+    height:20.25rem;
+    border-bottom: .4rem solid  #d3d3ff;
   }
-}
-// 手机配件
-.mobilephone p{
-  height: 1.8rem;
-  line-height: 1.8rem;
-  border-bottom: .05rem solid #d3d3ff;
-  color:#666;
-  font-size:.7rem; 
-  padding-left:.73rem;
-  font-weight: bold;
-}
-.mobilephone .log-mobile{
-  display: flex;
-  align-items: center;
-  border-radius: .25rem;
-  margin:0.62rem;
-  box-sizing: border-box;
- 
-  img{
-    width: 100%;
+  .mobilephone p{
+    height: 1.6rem;
+    line-height: 1.6rem;
+    border-bottom: .05rem solid #d3d3ff;
+    color:#666;
+    font-size:.7rem; 
+    padding-left:.73rem;
+    font-weight: bold;
   }
+  .mobilephone .log-mobile{
+    display: flex;
+    align-items: center;
+    border-radius: .25rem;
+    margin:0.62rem;
+    box-sizing: border-box;
+    img{
+      width: 100%;
+    }
+  }
+  .mobilephone .list{
+    border-top:.05rem solid #d3d3ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li{
+      box-sizing: border-box;
+      width: 29.4%;
+      img{
+        display: block;
+        width: 100%;
+        border: .04rem solid #fafafa;
+        margin-top:.62rem;
+        margin-bottom: .16rem;
+      }
+      span{
+        display: block;
+        margin-left:.16rem;
+        width:4rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  // 畅呼吸
+  .breath{
+    height:12.44rem;
+    border-bottom: .4rem solid  #d3d3ff;
+    p{
+      height: 1.6rem;
+      line-height: 1.6rem;
+      border-bottom: .05rem solid #d3d3ff;
+      color:#666;
+      font-size:.7rem; 
+      padding-left:.73rem;
+      font-weight: bold;
+    }
+    .log-breath{
+      display: flex;
+      align-items: center;
+      border-radius: .25rem;
+      margin:0.62rem;
+      box-sizing: border-box;
+      img{
+        width: 100%;
+      }
+    }
+    ul{
+      border-top:.05rem solid #d3d3ff;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+       margin-top:.76rem;
+        display: flex;
+        width: 47.4%;
+      a{
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        margin-left:.425rem;
+        img{
+          display: block;
+          background:#fff;
+          height: 1.68rem;
+        }
+        span{
+          color:#1d1d1dab;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-left:.425rem;
+          line-height: 1.68rem;
+        }
+      }
+      }
+    }
+  }
+  
 }
