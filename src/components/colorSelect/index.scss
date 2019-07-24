@@ -1,0 +1,40 @@
+@import '../../static/css/px2rem.scss';
+
+.colorSelect{
+  display: flex;
+  p{
+    height: 1.6rem;
+    line-height: 1.6rem;
+    border-bottom: .05rem solid #d3d3ff;
+    color:#666;
+    font-size:.7rem; 
+    padding-left:.73rem;
+    font-weight: bold;
+  }
+}
+.colorSelect .colorSelect-color{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .colores{
+    box-sizing: border-box;
+    width: 31%;
+    border: .04rem solid #fafafa;
+    margin-right: calc((100% - 31.3% * 3 - 1px) / 2);
+    margin-bottom: .6rem;
+    border-radius: .2rem;
+    span{
+      display: block;
+      width: .625rem;
+      height: .625rem;
+      border-radius: 50%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    p{
+      font-size:.42rem;
+      line-height: 1;
+      color: #666;
+    }
+  }
+}
