@@ -1,11 +1,13 @@
 import React from 'react';
-import User from './mine-user'
+import User from './mine-user';
+import Tabbar from '../../components/Tabbar/index';
 
 class Mine extends React.Component {
   render() {
     return (
       <div>
-        <User/>
+        <User />
+        <Tabbar />
       </div>
     );
   }

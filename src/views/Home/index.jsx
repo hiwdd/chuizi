@@ -1,4 +1,5 @@
 import React from 'react';
+import Tabbar from '../../components/Tabbar/index';
 import Menu from '../../components/Home/Menu/index';
 import BannerList from '../../components/Home/BannerList/index';
 import Hot from '../../components/Home/Hot/index';
@@ -23,6 +24,7 @@ class Home extends React.Component {
           <Parts />
           <Nut />
         </div>
+        <Tabbar />
       </div>
     );
   }

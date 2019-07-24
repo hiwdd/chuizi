@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavBar } from 'antd-mobile';
 import { Link } from 'react-router-dom';
+import Tabbar from '../../components/Tabbar/index';
 import './index.scss';
 
 class Notshop extends Component {
@@ -17,6 +18,7 @@ class Notshop extends Component {
             <Link to="/detail/11">现在选购</Link>
           </div>
         </div>
+        <Tabbar />
       </div>
     );
   }
