@@ -1,19 +1,22 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Tabbar from '../../components/Tabbar/index';
 import Header from '../../components/header/header';
+import { GetImageData } from '../../store/modules/classify/actionCreator';
 import './index.scss';
 
 class Classify extends React.Component {
   render() {
+    let { imageList } = this.props;
     return (
       <div className="classify">
         <Header />
         {/* 手机div */}
         <div className="wrap-pho">
           <div className="phone">
-            <p>手机</p>
+            <p>{imageList[0] && imageList[0].name}</p>
             <div className="phone-log">
-              <img src="https://resource.smartisan.com/resource/b1d887c9246cee3a8ba7a7a7c57d5a50.png?x-oss-process=image/resize,w_499/format,webp" />
+              <img src={imageList[0] && imageList[0].image.src} />
             </div>
             <a href="#">
               <img src="https://resource.smartisan.com/resource/25cc6e783a664fbdf83c3c34774a9826.png?x-oss-process=image/resize,w_63/format,webp" />
@@ -27,9 +30,9 @@ class Classify extends React.Component {
 
           {/* 手机配件div */}
           <div className="mobilephone">
-            <p>手机配件</p>
+            <p>{imageList[1] && imageList[1].name}</p>
             <div className="log-mobile">
-              <img src="https://resource.smartisan.com/resource/092ccb4ad40c623954fddef7e2ad44d6.png?x-oss-process=image/resize,w_660/format,webp" />
+              <img src={imageList[1] && imageList[1].image.src} />
             </div>
             <ul className="list">
               <li>
@@ -60,9 +63,9 @@ class Classify extends React.Component {
           </div>
           {/* 畅呼吸 */}
           <div className="breath">
-            <p>畅呼吸</p>
+            <p>{imageList[3] && imageList[3].name}</p>
             <div className="log-breath">
-              <img src="https://resource.smartisan.com/resource/29fd5d173a80c5023861e38c69cf9b7a.png?x-oss-process=image/resize,w_660/format,webp" />
+              <img src={imageList[3] && imageList[3].image.src} />
             </div>
             <ul>
               <li>
@@ -98,7 +101,21 @@ class Classify extends React.Component {
   }
   componentDidMount() {
     document.title = '分类';
+    this.props.handleGetImg();
   }
 }
 
-export default Classify;
+export default connect(
+  state => {
+    return {
+      imageList: state.classify.imageList
+    };
+  },
+  dispatch => {
+    return {
+      handleGetImg() {
+        dispatch(GetImageData);
+      }
+    };
+  }
+)(Classify);

@@ -4,13 +4,15 @@ import thunk from 'redux-thunk';
 //modules里写你的小仓库并引进来
 // import todoReducer from './modules/todo/reducer';
 import homeReducer from './modules/home/reducer';
+import classifyReducer from './modules/classify/reducer';
 
 const composeEnxxx = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
   // 合并你的小仓库
   combineReducers({
-    home: homeReducer
+    home: homeReducer,
+    classify: classifyReducer
   }),
   composeEnxxx(applyMiddleware(thunk))
 );
