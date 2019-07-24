@@ -4,7 +4,6 @@ import { Form,Input } from 'antd';
 import { NavLink } from "react-router-dom";
 import 'antd/dist/antd.css'
 import './index.scss'
-// import Router from '../mine-router'
 
 
 class Login extends React.Component {
@@ -39,7 +38,7 @@ class Login extends React.Component {
               登录
             </button>
             <NavLink className="login-form-forgot" to="/">
-                国际手机号注册
+                国际手机号登陆
               <Icon type="right" />
             </NavLink>
             </Form.Item>
