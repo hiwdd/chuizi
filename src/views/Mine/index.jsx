@@ -1,10 +1,11 @@
 import React from 'react';
+import User from './mine-user'
 
 class Mine extends React.Component {
   render() {
     return (
       <div>
-        <h1>Mine</h1>
+        <User/>
       </div>
     );
   }

@@ -1,0 +1,137 @@
+.login{
+  display: flex;
+  flex-flow: column;
+
+  .login_header{
+    width: 100%;
+    background: #1d1d1d;
+
+    p{
+      color: #fff;
+      font-size: 20px;
+      line-height: 2.8em;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+
+  .login_body{
+    margin: 14px 12px 0;
+    flex:1;
+    background: url(https://static.smartisanos.cn/account.common/img/v2/m/bg_66b2175241.jpg);
+
+    div{
+      margin: 0;
+      padding: 0;
+    }
+    input{
+      padding: 0 10px;
+      border-radius: .2rem .2rem 0 0;
+      height: 44px;
+      width: 100%;
+      font-size: 15px;
+      box-shadow: #ccc 0px -1px 0px 0px;
+      border: 0;
+      outline:0;
+
+    }
+
+    .psw{
+      border-radius: 0 0 .2rem .2rem;
+      box-shadow: #ccc 0px 0px 0px 0px;
+    }
+
+    .remember{
+      padding: .6rem;
+
+      .ant-form-item-children{
+        display: flex;
+
+        .che{
+          flex: 1;
+          display: flex;
+          b{
+            float: none;
+            display: block;
+            width: 20px;
+            height: 20px;
+            line-height: 18px;
+            background: #ececec;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            margin: 0;
+            box-shadow: #7f7f7f 0 2px 3px 0 inset;
+            margin-top: .4rem;
+          }
+          span{
+            margin-left: .2rem;
+            color: #7f7f7f;
+            font-size: 14px;
+          }
+        }
+  
+        a{
+          float: right;
+          margin-left: .4rem;
+          font-size: 14px;
+          color: #7f7f7f;
+        }
+      }
+      
+    }
+
+    button{
+      background-color: #81A8E4 ;
+      border-color: #81A8E4 ;
+      border: none;
+      border-radius: .3rem;
+      color: #fff;
+      width: 100%;
+      height: 51px;
+      font-size: 18px;
+      outline:0;
+
+    }
+    button:active {
+      border-color: #5178df ;
+      background-color: #5178df ;
+
+    }
+
+    a{
+      float: right;
+      color: #7f7f7f;
+
+
+    }
+    .am-icon-md{
+      float: right;
+      line-height: 3rem;
+      color: #9a9a9a;
+      position: relative;
+      top:7px;
+      padding-top:5px; 
+    }
+  }
+
+  .login_food{
+    width: 200px;
+    margin: 80% auto;
+    display: flex;
+    justify-content: center;
+
+      a{
+        margin-right: 10px;
+        display: block;
+        width:40px;
+        height: 40px;
+        border: #ccc 1px solid;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+      }
+    
+  }
+}
