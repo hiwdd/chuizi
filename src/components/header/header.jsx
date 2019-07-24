@@ -1,21 +1,23 @@
-
 import React from 'react';
 import { Icon } from 'antd';
+import { withRouter } from 'react-router-dom';
 import './header.scss';
 
-const Header = () => {
-  return(
-    <div className='header'> 
-      <Icon type="menu" className='navMenu' onClick={()=>{
-        
-      }}/> 
-      <span>分类</span>
+const Header = props => {
+  return (
+    <div className="header">
+      <Icon type="menu" className="navMenu" onClick={() => {}} />
+      <span>{props.name}</span>
 
-      <Icon type="search" className='navSreach' onClick={() => {
-        
-      }}/> 
-
+      <Icon
+        type="search"
+        className="navSreach"
+        onClick={() => {
+          props.history.push('/search');
+        }}
+      />
     </div>
-  )
-}
-export default Header;
+  );
+};
+
+export default withRouter(Header);

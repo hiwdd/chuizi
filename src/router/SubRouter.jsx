@@ -14,6 +14,7 @@ import Coupon from '../views/Mine/Coupon';
 import Login from '../views/Mine/Login';
 import Register from '../views/Mine/Register';
 import Other from '../views/Mine/Other';
+import Search from '../components/search/index';
 
 class SubRouter extends React.Component {
   render() {
@@ -30,6 +31,7 @@ class SubRouter extends React.Component {
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/other" component={Other} />
+        <Route path="/search" component={Search} />
         <Route path="*" component={NotFound} />
       </Switch>
     );

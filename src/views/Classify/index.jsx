@@ -10,7 +10,7 @@ class Classify extends React.Component {
     let { imageList } = this.props;
     return (
       <div className="classify">
-        <Header />
+        <Header name="分类" />
         {/* 手机div */}
         <div className="wrap-pho">
           <div className="phone">
