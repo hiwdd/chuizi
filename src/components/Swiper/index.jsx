@@ -1,23 +1,24 @@
-//轮播图组件
-
+// 基于 swiper 的 Swiper 组件
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import baseSwiper from 'swiper';
+import BaseSwiper from 'swiper';
 import 'swiper/dist/css/swiper.css';
 import './index.scss';
 
-export default class Swiper extends React.Component {
+class Swiper extends React.Component {
   render() {
-    let { slide, pagination, navigation, scrollbar } = this.props;
+    let { pagination, navigation, slide } = this.props;
+
     let className = `swiper-container ${this.props.className}`;
+
     if (slide.length > 0) {
       return (
-        <div className={className}>
+        <div className={className} style={this.props.style}>
           <div className="swiper-wrapper">
             {slide.map((item, index) => {
               return (
                 <div key={index} className="swiper-slide">
-                  <img src={item} alt="img" />
+                  <img src={item} alt="" />
                 </div>
               );
             })}
@@ -32,50 +33,56 @@ export default class Swiper extends React.Component {
               <div className="swiper-button-next" />
             </Fragment>
           )}
-
-          {/* <!-- 如果需要滚动条 --> */}
-          {scrollbar && <div className="swiper-scrollbar" />}
         </div>
       );
     } else {
       return null;
     }
   }
+
   initSwiper() {
-    this.mySwiper = new baseSwiper('.swiper-container', {
-      loop: this.props.loop,
+    this.mySiwper = new BaseSwiper('.swiper-container', {
+      // 选项
       autoplay: this.props.autoplay,
-      pagination: {
-        el: '.swiper-pagination'
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-      scrollbar: {
-        el: '.swiper-scrollbar'
-      }
+
+      pagination: this.props.pagination
+        ? {
+            el: '.swiper-pagination'
+          }
+        : {},
+
+      navigation: this.props.navigation
+        ? {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        : {}
     });
   }
   componentDidMount() {
     this.initSwiper();
   }
+  componentDidUpdate() {
+    if (this.mySiwper) {
+      this.mySiwper.destroy();
+    }
+    this.initSwiper();
+  }
 }
+
+// 设置 props 校验
 Swiper.propTypes = {
-  loop: PropTypes.bool,
-  pagination: PropTypes.bool,
-  navigation: PropTypes.bool,
-  scrollbar: PropTypes.bool,
-  autoplay: PropTypes.object
+  pagination: PropTypes.bool, // 分页器
+  navigation: PropTypes.bool, // 上下页
+  autoplay: PropTypes.bool,
+  slide: PropTypes.arrayOf(PropTypes.string).isRequired // ['']
 };
+
+// 设置 props 默认值
 Swiper.defaultProps = {
-  loop: true,
   pagination: true,
   navigation: false,
-  scrollbar: false,
-  autoplay: {
-    delay: 3000,
-    stopOnLastSlide: false,
-    disableOnInteraction: true
-  }
+  autoplay: false
 };
+
+export default Swiper;

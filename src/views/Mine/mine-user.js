@@ -22,7 +22,10 @@ class User extends React.Component {
               </div>
               <p>
                 {this.props.userInfo
-                  ? this.props.userInfo.userinfo
+                  ? this.props.userInfo.userinfo.replace(
+                      this.props.userInfo.userinfo.slice(3, 7),
+                      '****'
+                    )
                   : '登陆/注册'}
                 <Icon type="right" />
               </p>

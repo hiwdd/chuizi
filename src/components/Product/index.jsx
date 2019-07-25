@@ -15,11 +15,7 @@ class Product extends Component {
   render() {
     return (
       <div className="det-sp">
-        <Swiper
-          className="box"
-          autoplay={{ delay: 10000 }}
-          slide={this.state.bannerList}
-        />
+        <Swiper className="box" slide={this.state.bannerList} />
         <div className="det-sp-cont">
           <div className="cont-top">
             <h4>Smartisan 帆布鞋</h4>
