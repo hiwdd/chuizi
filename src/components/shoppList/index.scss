@@ -1,0 +1,76 @@
+@import'../../static/css/px2rem.scss';
+
+.shoppHead{
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  background: #1d1d1d;
+  color:#fff;
+  span{
+    line-height: 2.14rem;
+    font-size:0.84rem;
+    font-weight: bold;
+  }
+}
+.clothes-ul {
+  width: 100%;
+}
+
+.clothes-li {
+  width: 100%;
+  height: px2rem(150);
+  display: flex;
+  padding: 12px;
+  border-bottom: 1px solid gray;
+}
+
+
+.clothes-li img {
+  height: px2rem(126);
+  width:px2rem(126);
+  margin-right: px2rem(44);
+}
+
+.clothes-detail {
+  padding: 20px 0;
+}
+
+.clothes-detail h5 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.clothes-detail p {
+  font-size: 12px;
+  color: #7f7f7f;
+  line-height: 20px;
+}
+
+.clothes-color {
+  line-height: 24px;
+}
+
+.colores {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.colores:nth-child(1){
+  background: red;
+}
+.colores:nth-child(2){
+  background: blue;
+}
+.colores:nth-child(3){
+  background: rgb(255, 230, 0);
+}
+
+.clothes-price {
+  display: flex;
+  white-space: nowrap;
+  color:#d44d44;
+}
