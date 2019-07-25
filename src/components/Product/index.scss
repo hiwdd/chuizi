@@ -4,7 +4,12 @@
 .det-sp {
   .box {
     height: px2rem(300);
-    margin: auto;
+
+    img {
+      margin: auto;
+      width: px2rem(300);
+      height: px2rem(300);
+    }
   }
   .det-sp-cont {
     .cont-top {

@@ -1,21 +1,46 @@
 import React from 'react';
 import './index.scss';
+import Swiper from '../../Swiper';
+import { connect } from 'react-redux';
+import { GetHomeList } from '../../../store/modules/home/actionCreator';
 
 class BannerList extends React.Component {
   render() {
+    let { homeList } = this.props;
+    let bannerList = homeList.map(item => item.src);
+    // console.log(bannerList);
     return (
       <div className="container">
         <ul className="container-ul">
           <li className="container-li">
-            <img
-              src="https://resource.smartisan.com/resource/fda5c3e61a71c0f883bbd6c76516cd85.png"
-              alt=""
+            <Swiper
+              className="box"
+              slide={bannerList}
+              autoplay={true}
+              loop={true}
             />
           </li>
         </ul>
       </div>
     );
   }
+
+  componentDidMount() {
+    this.props.getDateList();
+  }
 }
 
-export default BannerList;
+export default connect(
+  state => {
+    return {
+      homeList: state.home.homeList
+    };
+  },
+  dispatch => {
+    return {
+      getDateList() {
+        dispatch(GetHomeList);
+      }
+    };
+  }
+)(BannerList);

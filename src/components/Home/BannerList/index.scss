@@ -19,7 +19,12 @@
   padding: 12px 12px 20px 12px;
 }
 
-.container-li img {
+.container-li .box {
   height: px2rem(145);
   width: px2rem(350);
+}
+
+.container-li .box img {
+  width: px2rem(350);
+  height: px2rem(146);
 }

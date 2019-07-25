@@ -1,10 +1,15 @@
+@import '../../static/css/px2rem.scss';
+
 * {
   margin: 0;
   padding: 0;
 }
 .swiper-container {
   width: 100%;
+  height: px2rem(183);
+  background: #fff;
 }
+
 .swiper-container img {
   width: 100%;
 }

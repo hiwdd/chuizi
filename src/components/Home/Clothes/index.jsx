@@ -1,6 +1,7 @@
 import React from 'react';
 import { Icon } from 'antd';
 import './index.scss';
+import { Link } from 'react-router-dom';
 
 class Clothes extends React.Component {
   render() {
@@ -13,8 +14,8 @@ class Clothes extends React.Component {
 
         <ul className="clothes-ul">
           <li className="clothes-li">
-            <a href="#"><img alt="" src="https://resource.smartisan.com/resource/fc092e830c0420b5d8db2871fec82b35.png?x-oss-process=image/resize,w_405/format,webp"/></a>
-            
+            <Link to="#"><img alt="" src="https://resource.smartisan.com/resource/fc092e830c0420b5d8db2871fec82b35.png?x-oss-process=image/resize,w_405/format,webp" /></Link>
+
             <div className="clothes-detail">
               <h5>地平线 8 号旅行箱</h5>
               <p>简约设计、德国拜耳 PC 箱体</p>
@@ -31,8 +32,8 @@ class Clothes extends React.Component {
           </li>
 
           <li className="clothes-li">
-            <a href="#"><img alt="" src="https://resource.smartisan.com/resource/d1dcca9144e8d13ffb33026148599d0a.png?x-oss-process=image/resize,w_405/format,webp"/></a>
-            
+            <Link to="#"><img alt="" src="https://resource.smartisan.com/resource/d1dcca9144e8d13ffb33026148599d0a.png?x-oss-process=image/resize,w_405/format,webp" /></Link>
+
             <div className="clothes-detail">
               <h5>地平线 8 号商务旅行箱</h5>
               <p>为了野心和远方</p>
@@ -49,8 +50,8 @@ class Clothes extends React.Component {
           </li>
 
           <li className="clothes-li">
-            <a href="#"><img alt="" src="https://resource.smartisan.com/resource/d9586f7c5bb4578e3128de77a13e4d85.png?x-oss-process=image/resize,w_405/format,webp"/></a>
-            
+            <Link to="#"><img alt="" src="https://resource.smartisan.com/resource/d9586f7c5bb4578e3128de77a13e4d85.png?x-oss-process=image/resize,w_405/format,webp" /></Link>
+
             <div className="clothes-detail">
               <h5>Smartisan T恤 皇帝的新装</h5>
               <p></p>

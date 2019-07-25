@@ -45,6 +45,8 @@ class Swiper extends React.Component {
       // 选项
       autoplay: this.props.autoplay,
 
+      loop: this.props.loop,
+
       pagination: this.props.pagination
         ? {
             el: '.swiper-pagination'
@@ -59,9 +61,6 @@ class Swiper extends React.Component {
         : {}
     });
   }
-  componentDidMount() {
-    this.initSwiper();
-  }
   componentDidUpdate() {
     if (this.mySiwper) {
       this.mySiwper.destroy();
@@ -75,6 +74,7 @@ Swiper.propTypes = {
   pagination: PropTypes.bool, // 分页器
   navigation: PropTypes.bool, // 上下页
   autoplay: PropTypes.bool,
+  loop: PropTypes.bool,
   slide: PropTypes.arrayOf(PropTypes.string).isRequired // ['']
 };
 
@@ -82,7 +82,8 @@ Swiper.propTypes = {
 Swiper.defaultProps = {
   pagination: true,
   navigation: false,
-  autoplay: false
+  autoplay: false,
+  loop: true
 };
 
 export default Swiper;
