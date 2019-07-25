@@ -6,7 +6,9 @@ import './header.scss';
 const Header = props => {
   return (
     <div className="header">
-      <Icon type="menu" className="navMenu" onClick={() => {}} />
+      <Icon type="menu" className="navMenu" onClick={() => {
+        props.history.push('/menu')
+      }} />
       <span>{props.name}</span>
 
       <Icon
