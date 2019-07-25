@@ -16,6 +16,7 @@ import Register from '../views/Mine/Register';
 import Other from '../views/Mine/Other';
 import Search from '../components/search/index';
 
+
 class SubRouter extends React.Component {
   render() {
     return (
@@ -32,6 +33,7 @@ class SubRouter extends React.Component {
         <Route path="/register" component={Register} />
         <Route path="/other" component={Other} />
         <Route path="/search" component={Search} />
+      
         <Route path="*" component={NotFound} />
       </Switch>
     );

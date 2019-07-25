@@ -1,0 +1,14 @@
+@import '../../static/css/px2rem.scss';
+
+ul{
+  height: 11.02rem;
+  display: flex;
+  background: #000;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li{
+    width: 24.4%;
+    color:#f5f5f5;
+    border: .05rem solid #22223a;
+  }
+}

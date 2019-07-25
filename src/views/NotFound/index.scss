@@ -1,0 +1,13 @@
+@import '../../static/css/px2rem.scss';
+.warn{
+  width:16rem;
+  height:14rem;
+  margin:50% auto;
+  left:0;right:0;
+  background:#ededed;
+  h1{
+    color:#cfcfcf;
+    text-align: center;
+    line-height: 2.625rem;
+  }
+}
