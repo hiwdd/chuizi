@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavBar, Icon, Tabs } from 'antd-mobile';
+import { connect } from 'react-redux';
 import Product from '../../components/Product/index';
 import Details from '../../components/Details/index';
 import Params from '../../components/Params/index';
@@ -16,6 +17,8 @@ const tabs = [
 
 class Detail extends Component {
   render() {
+    let { detailList } = this.props;
+    let shopInfo = detailList;
     return (
       <div className="detail">
         <NavBar
@@ -30,14 +33,14 @@ class Detail extends Component {
           }
           style={{ fontSize: '18px', color: '#fff', background: 'black' }}
         >
-          Smartisan 帆布鞋
+          详情页
         </NavBar>
         <div className="det-center">
           <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
-            <Product />
-            <Details />
-            <Params />
-            <Recommend />
+            <Product shopInfo={shopInfo} />
+            <Details shopInfo={shopInfo} />
+            <Params shopInfo={shopInfo} />
+            <Recommend shopInfo={shopInfo} />
           </Tabs>
         </div>
         <DetailTabbar />
@@ -49,4 +52,11 @@ class Detail extends Component {
   }
 }
 
-export default Detail;
+export default connect(
+  state => {
+    return {
+      detailList: state.detail.detailList
+    };
+  },
+  null
+)(Detail);

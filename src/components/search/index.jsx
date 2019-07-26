@@ -1,32 +1,38 @@
 import { SearchBar } from 'antd-mobile';
 import React from 'react';
+import './index.scss';
+import { NavLink } from 'react-router-dom';
 
 class Search extends React.Component {
   render() {
     return (
-      <div>
-        <SearchBar
-          placeholder="自动获取光标"
-          ref={ref => (this.autoFocusInst = ref)}
-        />
-
-        <div>
+      <div className="search">
+        <div className="search_header">
+          <SearchBar
+            placeholder="请输入要搜索的内容"
+            ref={ref => (this.autoFocusInst = ref)}
+          />
+          <span className="searchs_f">
+            <NavLink to="/">返回</NavLink>
+          </span>
+        </div>
+        <div className="search_body">
           <p>热门搜索</p>
           <ul>
             <li>
-              <a href="">T恤</a>
+              <NavLink to="/">T恤</NavLink>
             </li>
             <li>
-              <a href="">移动电源</a>
+              <NavLink to="/">移动电源</NavLink>
             </li>
             <li>
-              <a href="">卫衣</a>
+              <NavLink to="/">卫衣</NavLink>
             </li>
             <li>
-              <a href="">帆布鞋</a>
+              <NavLink to="/">帆布鞋</NavLink>
             </li>
             <li>
-              <a href="">保护套</a>
+              <NavLink to="/">保护套</NavLink>
             </li>
           </ul>
         </div>

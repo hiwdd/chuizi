@@ -6,6 +6,7 @@ import thunk from 'redux-thunk';
 import homeReducer from './modules/home/reducer';
 import classifyReducer from './modules/classify/reducer';
 import mineReducer from './modules/mine/reducer';
+import detailReducer from './modules/detail/reducer';
 
 const composeEnxxx = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -14,7 +15,8 @@ const store = createStore(
   combineReducers({
     home: homeReducer,
     classify: classifyReducer,
-    mine: mineReducer
+    mine: mineReducer,
+    detail: detailReducer
   }),
   composeEnxxx(applyMiddleware(thunk))
 );

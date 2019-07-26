@@ -1,10 +1,13 @@
 import React from 'react';
 import { Icon } from 'antd';
 import './index.scss';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { GetDetailList } from '../../../store/modules/detail/actionCreator';
 
 class Clothes extends React.Component {
   render() {
+    let { fsxb } = this.props;
     return (
       <div className="clothes">
         <div className="clothes-more">
@@ -13,63 +16,49 @@ class Clothes extends React.Component {
         </div>
 
         <ul className="clothes-ul">
-          <li className="clothes-li">
-            <Link to="#"><img alt="" src="https://resource.smartisan.com/resource/fc092e830c0420b5d8db2871fec82b35.png?x-oss-process=image/resize,w_405/format,webp" /></Link>
+          {fsxb.map(item => {
+            return (
+              <Link
+                key={item.id}
+                to={`/detail/${item.id}`}
+                onClick={() => {
+                  this.props.handleDetail(item);
+                }}
+              >
+                <li className="clothes-li">
+                  <img alt="" src={item.shop_info.ali_image} />
 
-            <div className="clothes-detail">
-              <h5>地平线 8 号旅行箱</h5>
-              <p>简约设计、德国拜耳 PC 箱体</p>
-              <ul className="clothes-color">
-                <li className="colores"></li>
-                <li className="colores"></li>
-                <li className="colores"></li>
-              </ul>
-              <div className="clothes-price">
-                <p>¥</p>
-                <p>149.00</p>
-              </div>
-            </div>
-          </li>
-
-          <li className="clothes-li">
-            <Link to="#"><img alt="" src="https://resource.smartisan.com/resource/d1dcca9144e8d13ffb33026148599d0a.png?x-oss-process=image/resize,w_405/format,webp" /></Link>
-
-            <div className="clothes-detail">
-              <h5>地平线 8 号商务旅行箱</h5>
-              <p>为了野心和远方</p>
-              <ul className="clothes-color">
-                <li className="colores"></li>
-                <li className="colores"></li>
-                <li className="colores"></li>
-              </ul>
-              <div className="clothes-price">
-                <p>¥</p>
-                <p>999.00</p>
-              </div>
-            </div>
-          </li>
-
-          <li className="clothes-li">
-            <Link to="#"><img alt="" src="https://resource.smartisan.com/resource/d9586f7c5bb4578e3128de77a13e4d85.png?x-oss-process=image/resize,w_405/format,webp" /></Link>
-
-            <div className="clothes-detail">
-              <h5>Smartisan T恤 皇帝的新装</h5>
-              <p></p>
-              <ul className="clothes-color">
-                <li className="colores"></li>
-                <li className="colores"></li>
-                <li className="colores"></li>
-              </ul>
-              <div className="clothes-price">
-                <p>¥</p>
-                <p>119.00</p>
-              </div>
-            </div>
-          </li>
+                  <div className="clothes-detail">
+                    <h5>{item.shop_info.title}</h5>
+                    <p>{item.shop_info.sub_title}</p>
+                    <ul className="clothes-color">
+                      <li className="colores" />
+                      <li className="colores" />
+                      <li className="colores" />
+                    </ul>
+                    <div className="clothes-price">
+                      <p>¥</p>
+                      <p>{item.price}</p>
+                    </div>
+                  </div>
+                </li>
+              </Link>
+            );
+          })}
         </ul>
       </div>
-    )
+    );
   }
 }
 
-export default Clothes;
+export default connect(
+  null,
+  dispatch => {
+    return {
+      handleDetail(item) {
+        window.sessionStorage.setItem('detailList', JSON.stringify(item));
+        dispatch(GetDetailList(item));
+      }
+    };
+  }
+)(Clothes);

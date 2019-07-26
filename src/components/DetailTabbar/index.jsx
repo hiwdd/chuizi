@@ -9,7 +9,7 @@ class DetailTabbar extends Component {
     return (
       <div className="dt">
         <Link className="btn btn2" to="/shopcar">
-          <Icon type="folder-add" style={{ fontSize: '26px' }} />
+          <Icon type="car" style={{ fontSize: '26px' }} />
         </Link>
         <Button className="btn btn1" type="ghost" inline={true}>
           加入购物车

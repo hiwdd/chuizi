@@ -1,4 +1,5 @@
 @import '../../../static/css/px2rem.scss';
+@import '../../../static/css/mixins.scss';
 
 .clothes {
   width: 100%;
@@ -8,12 +9,12 @@
 
 .clothes-more {
   width: 100%;
-  height:px2rem(40);
+  height: px2rem(40);
   line-height: px2rem(40);
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid gray;
+  @include border-bottom;
 }
 
 .clothes-more p {
@@ -23,7 +24,7 @@
 }
 
 .right {
-  margin-top:px2rem(12)
+  margin-top: px2rem(12);
 }
 
 .clothes-ul {
@@ -35,13 +36,12 @@
   height: px2rem(150);
   display: flex;
   padding: 12px;
-  border-bottom: 1px solid gray;
+  @include border-bottom;
 }
-
 
 .clothes-li img {
   height: px2rem(126);
-  width:px2rem(126);
+  width: px2rem(126);
   margin-right: px2rem(44);
 }
 
@@ -73,20 +73,18 @@
   margin-right: 10px;
 }
 
-.colores:nth-child(1){
+.colores:nth-child(1) {
   background: red;
 }
-.colores:nth-child(2){
+.colores:nth-child(2) {
   background: blue;
 }
-.colores:nth-child(3){
+.colores:nth-child(3) {
   background: rgb(255, 230, 0);
 }
 
 .clothes-price {
   display: flex;
   white-space: nowrap;
-  color:#d44d44;
+  color: #d44d44;
 }
-
-
