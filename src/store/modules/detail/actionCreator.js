@@ -6,3 +6,11 @@ export const GetDetailList = value => {
     value
   };
 };
+
+//购物车
+export const GetShopcarList = value => {
+  return {
+    type: 'gatShopcarList',
+    value
+  };
+};

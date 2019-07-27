@@ -1,6 +1,9 @@
 @import '../../static/css/px2rem.scss';
+
 .shopcar {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   .notshop {
     height: 100%;
     display: flex;
@@ -34,6 +37,41 @@
           font-size: 14px;
         }
       }
+    }
+  }
+  .hasshop {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .shoplist {
+      display: flex;
+      flex: 1;
+      overflow: auto;
+      flex-direction: column;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        height: px2rem(114);
+        overflow: hidden;
+        margin-bottom: 6px;
+        img {
+          width: px2rem(90);
+          margin: 0 px2rem(20);
+        }
+        .wrap-price {
+          line-height: 22px;
+        }
+      }
+    }
+    .shopcount {
+      height: px2rem(54);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #fff;
+      margin-bottom: 6px;
     }
   }
 }
